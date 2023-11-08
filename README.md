@@ -17,7 +17,7 @@ Minimal, workable example of Nextflow
 
 ```bash
 ./nextflow run MarieLataretu/nextflow-mwe \
-    -r main \
+    -r v1.0 \
     -profile local,mamba
 ```
 
