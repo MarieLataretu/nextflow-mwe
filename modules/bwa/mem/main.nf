@@ -2,8 +2,8 @@ process BWA_MEM {
     // custom label for easier identification in the log file
     tag "$name"
 
-    // copy the results to a defined folder
-    publishDir "${params.outdir}", mode: 'copy'
+    // copy the BAM file to a defined folder
+    publishDir "${params.outdir}", mode: 'copy', pattern: "*.bam"
 
     // engine settings
     conda 'bioconda::bwa=0.7.17 bioconda::samtools=1.18'
