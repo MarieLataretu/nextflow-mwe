@@ -29,4 +29,8 @@ process BWA_MEM {
         samtools view -Sb -@ $task.cpus | \
         samtools sort -@ $task.cpus > ${name}.bam
     """
+    stub:
+    """
+    touch "${name}.bam" 
+    """
 }

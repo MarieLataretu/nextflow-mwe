@@ -35,4 +35,10 @@ process FASTP {
         --overrepresentation_analysis \
         --thread $task.cpus 
     """
+    stub:
+    """
+    touch "${name}".fastp.R{1,2}.fastq.gz
+    touch "${name}.fastp.json"
+    touch "${name}.fastp.html"
+    """
 }

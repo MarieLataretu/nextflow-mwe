@@ -21,6 +21,15 @@ Minimal, workable example of Nextflow
     -profile local,mamba
 ```
 
+## Run a dry-run
+
+```bash
+./nextflow run MarieLataretu/nextflow-mwe \
+    -r v1.0 \
+    -profile local,mamba \
+    -stub
+```
+
 ## Components 
 
 This minimal examples uses the following software components and tools: 
