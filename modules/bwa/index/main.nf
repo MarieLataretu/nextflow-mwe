@@ -21,4 +21,12 @@ process BWA_INDEX {
     """
     bwa index ${reference}
     """
+    stub:
+    """
+    touch ${reference}.amb
+    touch ${reference}.ann
+    touch ${reference}.bwt
+    touch ${reference}.pac
+    touch ${reference}.sa
+    """
 }
